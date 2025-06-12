@@ -1,10 +1,10 @@
 <fable>
   <config font-family="MedievalSharp" />
 
-  <property name="pontuacao" default="0" />
+  <property name="pontos" default="0" />
   <property name="visitante" default="Aventureiro" />
 
-  <page id="page1" bg_color="black">
+  <page id="page1" bg_color="white">
     <agent
       id="titulo"
       x="center"
@@ -13,9 +13,26 @@
       color="white"
       font-size="24"
     />
+    <!-- Asset central que adiciona pontos -->
+    <agent id="central-asset" x="50" y="50" image="tech-robot.png" on_click="set(pontos, $pontos + 2)" />
+
+    <!-- Exibição do contador de pontos -->
+    <agent id="contador" x="50" y="10" text="Pontos: $pontos" font-size="20" />
   </page>
+
+
+  
 
   <start />
   <middle />
   <ending />
 </fable>
+
+
+
+
+    <!-- Asset 1 -->
+    <agent id="espada" x="100" y="400" text="Comprar Item 1" on_click="setIf($pontos >= 20, pontos, $pontos - 20); setIf($pontos >= 20, item1, true)" />
+
+    <!-- Asset 2 -->
+    <agent id="escudo" x="300" y="400" text="Comprar Item 2" on_click="setIf($pontos >= 20, pontos, $pontos - 20); setIf($pontos >= 20, item2, true)" />
