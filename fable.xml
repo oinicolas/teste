@@ -4,6 +4,17 @@
   <property name="pontuacao" default="0" />
   <property name="visitante" default="Aventureiro" />
 
+  <page id="page1" bg_color="black">
+    <agent
+      id="titulo"
+      x="center"
+      y="center"
+      text="Página page1"
+      color="white"
+      font-size="24"
+    />
+  </page>
+
   <start />
   <middle />
   <ending />
