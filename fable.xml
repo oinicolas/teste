@@ -26,7 +26,7 @@
       x="100" 
       y="400" 
       text="Comprar Item 1" 
-      on_click="setIf($pontos >= 20, pontos, $pontos - 20); setIf($pontos >= 20, espada, true)" />
+      on_click="setIf setIf($pontos >= 20, espada, true); ($pontos >= 20, pontos, $pontos - 20) " />
 
     <agent 
       id="contador_espada" 
