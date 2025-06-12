@@ -1,3 +1,27 @@
-<page id="page1" bg_color="black">
-  <agent id="titulo" x="center" y="center" text="Página page1" color="white" font-size="24" />
+<page
+  id="start"
+  bg_image="dark_cave_landscape_1308_16279.png"
+  bg_music="osts-vilo.mp3"
+>
+  <agent
+    id="titulo"
+    x="center"
+    y="160"
+    text="CAVE RPG"
+    color="#ecf0f1"
+    font-size="80"
+  />
+
+  <agent
+    id="botao-comecar"
+    x="center"
+    y="300"
+    text="Começar Jogo"
+    bg_color="#964a0f"
+    color="#ffffff"
+    font-size="32"
+    border="solid"
+    radius="10"
+    on_click="goToPage('page1')"
+  />
 </page>
