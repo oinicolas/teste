@@ -14,15 +14,16 @@
       font-size="24"
     />
     <!-- Asset central que adiciona pontos -->
-    <agent id="central-asset" x="50" y="50" image="tech-robot.png" on_click="set(pontos, $pontos + 2)" />
+    <agent id="central-asset" x="200" y="50" image="forest-stone.png" on_click="set(pontos, $pontos + 2)" />
 
     <!-- Exibição do contador de pontos -->
-    <agent id="contador" x="50" y="10" text="Pontos: $pontos" font-size="20" />
+    <agent id="contador_pontos" x="200" y="10" text="Pontos: $pontos" font-size="20" />
 
-    <!-- Asset 1 -->
+    <!-- Escudo -->
     <agent id="espada" x="100" y="400" text="Comprar Item 1" on_click="setIf($pontos >= 20, pontos, $pontos - 20); setIf($pontos >= 20, item1, true)" />
+    <agent id="contador_espada" x="400" y="10" text="Espada: $espada" font-size="20" />
 
-    <!-- Asset 2 -->
+    <!-- Escudo -->
     <agent id="escudo" x="300" y="400" text="Comprar Item 2" on_click="setIf($pontos >= 20, pontos, $pontos - 20); setIf($pontos >= 20, item2, true)" />
   </page>
 
