@@ -21,8 +21,18 @@
     <agent id="contador_pontos" x="200" y="10" text="Pontos: $pontos" font-size="20" />
 
     <!-- Espada -->
-    <agent id="item1" x="100" y="400" text="Comprar Item 1" on_click="setIf($pontos >= 20, pontos, $pontos - 20); setIf($pontos >= 20, espada, true)" />
-    <agent id="contador_espada" x="400" y="10" text="Espada: $espada" font-size="20" />
+    <agent 
+      id="item1" 
+      x="100" 
+      y="400" 
+      text="Comprar Item 1" 
+      on_click="setIf($pontos >= 20, pontos, $pontos - 20); setIf($pontos >= 20, espada)" />
+    <agent 
+      id="contador_espada" 
+      x="400" 
+      y="10" 
+      text="Espada: $espada" 
+      font-size="20" />
 
     <!-- Escudo -->
     <agent id="escudo" x="300" y="400" text="Comprar Item 2" on_click="setIf($pontos >= 20, pontos, $pontos - 20); setIf($pontos >= 20, item2, true)" />
