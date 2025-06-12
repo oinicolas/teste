@@ -2,7 +2,7 @@
   <config font-family="MedievalSharp" />
 
   <property name="pontos" default="0" />
-  <property name="espada" default="False" />
+  <property name="espada" default="0" />
   <property name="visitante" default="Aventureiro" />
 
   <page id="page1" bg_color="white">
@@ -26,7 +26,7 @@
       x="100" 
       y="400" 
       text="Comprar Item 1" 
-      on_click="setIf setIf($pontos >= 20, espada, true); ($pontos >= 20, pontos, $pontos - 20) " />
+      on_click="setIf setIf($pontos >= 20, espada, $espada + 1); ($pontos >= 20, pontos, $pontos - 20) " />
 
     <agent 
       id="contador_espada" 
