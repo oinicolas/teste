@@ -1,12 +1,11 @@
 <page id="start" bg_image="tech-bg-lab.png" bg_music="osts-vilo.mp3">
-<agent
-    id="Com"
-    text="comld"
-    color="white"
+  <agent
+    id="titulo"
     x="center"
-    y="center"
-    font-size="70"
-  />
+    y="140"
+    text="TÍTULO DO JOGO RPG" 
+    color="#ecf0f1"
+    font-size="64" />
 
   <agent
     id="next_page_text"
