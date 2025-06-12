@@ -7,14 +7,11 @@
     color="#ecf0f1"
     font-size="64" />
 
-  <agent
-    id="next_page_text"
-    text="Proxima Pagina"
-    animation="glitch"
-    y="480"
-    x="640"
-    on_click="goToPage('middle')"
-  />  
+  agent id="botao-comecar" x="400" y="300" text="Começar Jogo" 
+           bg_color="#27ae60" color="#ffffff" font-size="20" 
+           border="solid" border_color="#1e8449" radius="10"
+           hover_bg_color="#1e8449" hover_color="#f1c40f"
+           on_click="goToPage('jogo')" />
 </page>
 
 
