@@ -1,7 +1,7 @@
 <page id="start" bg_image="tech-bg-lab.png" bg_music="osts-vilo.mp3">
-  <agent
-    id="teste"
-    text="Hello World"
+<agent
+    id="Com"
+    text="comld"
     color="white"
     x="center"
     y="center"
@@ -15,5 +15,21 @@
     y="480"
     x="640"
     on_click="goToPage('middle')"
-  />
+  />  
 </page>
+
+
+<fable>
+  <page id="introducao" bg_color="#2c3e50">
+    <!-- Título do Jogo -->
+    <agent id="titulo" x="400" y="100" text="TÍTULO DO JOGO RPG" 
+           color="#ecf0f1" font-size="32" />
+
+    <!-- Botão para Começar o Jogo -->
+    <agent id="botao-comecar" x="400" y="300" text="Começar Jogo" 
+           bg_color="#27ae60" color="#ffffff" font-size="20" 
+           border="solid" border_color="#1e8449" radius="10"
+           hover_bg_color="#1e8449" hover_color="#f1c40f"
+           on_click="goToPage('jogo')" />
+  </page>
+</fable>
