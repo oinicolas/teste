@@ -1,37 +1,27 @@
-<page id="start" bg_image="dark_cave_landscape_1308_16279.png" bg_music="osts-vilo.mp3">
+<page
+  id="start"
+  bg_image="dark_cave_landscape_1308_16279.png"
+  bg_music="osts-vilo.mp3"
+>
   <agent
     id="titulo"
     x="center"
     y="160"
-    text="CAVE RPG" 
+    text="CAVE RPG"
     color="#ecf0f1"
-    font-size="80" />
+    font-size="80"
+  />
 
-  <agent 
+  <agent
     id="botao-comecar"
-    x="center" 
-    y="300" 
-    text="Começar Jogo" 
-    bg_color="#964a0f" 
-    color="#ffffff" 
-    font-size="32" 
-    border="solid" 
+    x="center"
+    y="300"
+    text="Começar Jogo"
+    bg_color="#964a0f"
+    color="#ffffff"
+    font-size="32"
+    border="solid"
     radius="10"
-    on_click="goToPage('page1')" />
+    on_click="goToPage('page1')"
+  />
 </page>
-
-
-<fable>
-  <page id="introducao" bg_color="#2c3e50">
-    <!-- Título do Jogo -->
-    <agent id="titulo" x="400" y="100" text="TÍTULO DO JOGO RPG" 
-           color="#ecf0f1" font-size="32" />
-
-    <!-- Botão para Começar o Jogo -->
-    <agent id="botao-comecar" x="400" y="300" text="Começar Jogo" 
-           bg_color="#27ae60" color="#ffffff" font-size="20" 
-           border="solid" border_color="#1e8449" radius="10"
-           hover_bg_color="#1e8449" hover_color="#f1c40f"
-           on_click="goToPage('jogo')" />
-  </page>
-</fable>
